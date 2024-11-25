@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{24101069-382B-4BED-8645-0870DEB4202E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BDD_PIA_E4</RootNamespace>
+    <AssemblyName>BDD PIA E4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdeudoInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdeudoInsumos.Designer.cs">
+      <DependentUpon>AdeudoInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CitasRecepcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CitasRecepcion.Designer.cs">
+      <DependentUpon>CitasRecepcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="DetalleOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleOrdenCompra.Designer.cs">
+      <DependentUpon>DetalleOrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuServicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuServicios.Designer.cs">
+      <DependentUpon>menuServicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuEspecialiad_servicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuEspecialiad_servicio.Designer.cs">
+      <DependentUpon>menuEspecialiad_servicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuEspecialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuEspecialidad.Designer.cs">
+      <DependentUpon>menuEspecialidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuRecetas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuRecetas.Designer.cs">
+      <DependentUpon>menuRecetas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuObservaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuObservaciones.Designer.cs">
+      <DependentUpon>menuObservaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuTiposCondicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuTiposCondicion.Designer.cs">
+      <DependentUpon>menuTiposCondicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuCondicion_pac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuCondicion_pac.Designer.cs">
+      <DependentUpon>menuCondicion_pac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsumoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsumoProveedor.Designer.cs">
+      <DependentUpon>InsumoProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventario.Designer.cs">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventariosCatalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventariosCatalogo.Designer.cs">
+      <DependentUpon>InventariosCatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAdeudos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdeudos.Designer.cs">
+      <DependentUpon>MenuAdeudos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDoctores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDoctores.Designer.cs">
+      <DependentUpon>MenuDoctores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEmpleados.Designer.cs">
+      <DependentUpon>MenuEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuMedicamentos.Designer.cs">
+      <DependentUpon>MenuMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuP.Designer.cs">
+      <DependentUpon>MenuP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPacientes.Designer.cs">
+      <DependentUpon>MenuPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPago.Designer.cs">
+      <DependentUpon>MenuPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPuestos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPuestos.Designer.cs">
+      <DependentUpon>MenuPuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuReporte.Designer.cs">
+      <DependentUpon>MenuReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModalConfirmar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModalConfirmar.Designer.cs">
+      <DependentUpon>ModalConfirmar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrdenCompra.Designer.cs">
+      <DependentUpon>OrdenCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.cs">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdeudoInsumos.resx">
+      <DependentUpon>AdeudoInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CitasRecepcion.resx">
+      <DependentUpon>CitasRecepcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleOrdenCompra.resx">
+      <DependentUpon>DetalleOrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuServicios.resx">
+      <DependentUpon>menuServicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuEspecialiad_servicio.resx">
+      <DependentUpon>menuEspecialiad_servicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuEspecialidad.resx">
+      <DependentUpon>menuEspecialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuRecetas.resx">
+      <DependentUpon>menuRecetas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuObservaciones.resx">
+      <DependentUpon>menuObservaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuTiposCondicion.resx">
+      <DependentUpon>menuTiposCondicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuCondicion_pac.resx">
+      <DependentUpon>menuCondicion_pac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsumoProveedor.resx">
+      <DependentUpon>InsumoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventario.resx">
+      <DependentUpon>Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventariosCatalogo.resx">
+      <DependentUpon>InventariosCatalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdeudos.resx">
+      <DependentUpon>MenuAdeudos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDoctores.resx">
+      <DependentUpon>MenuDoctores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEmpleados.resx">
+      <DependentUpon>MenuEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuMedicamentos.resx">
+      <DependentUpon>MenuMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuP.resx">
+      <DependentUpon>MenuP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPacientes.resx">
+      <DependentUpon>MenuPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPago.resx">
+      <DependentUpon>MenuPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPuestos.resx">
+      <DependentUpon>MenuPuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuReporte.resx">
+      <DependentUpon>MenuReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModalConfirmar.resx">
+      <DependentUpon>ModalConfirmar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrdenCompra.resx">
+      <DependentUpon>OrdenCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
